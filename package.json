@@ -1,0 +1,28 @@
+{
+  "name": "patud.us",
+  "version": "0.0.1",
+  "description": "Pet database to simple identification",
+  "main": "server.js",
+  "author": "tagliati",
+  "license": "MIT",
+  "dependencies": {
+    "bourbon-neat": "~1.7.4",
+    "consolidate": "~0.14.0",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "handlebars": "^4.0.5",
+    "node-neat": "~1.7.2",
+    "node-sass": "^3.4.2",
+    "nodejs": "0.0.0",
+    "qr-image": "^3.1.0",
+    "sqlite3": "^3.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "mocha": "^2.4.5",
+    "nodemon": "~1.9.1",
+    "node-bourbon": "~4.2.8",
+    "node-neat": "~1.7.2"
+  }
+}
