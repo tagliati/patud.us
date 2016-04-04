@@ -1,0 +1,5 @@
+var config = {};
+
+config.db = "pet.db";
+
+module.exports = config;
