@@ -1,5 +1,7 @@
 var config = {};
 
 config.db = "pet.db";
+config.slugSize = 6;
+config.domain = "patud.us";
 
 module.exports = config;
