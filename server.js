@@ -12,10 +12,14 @@ app.set('view engine', 'html');
 app.use("/static",express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
+	res.render("index");
 });
 
 app.get('/pet/:slug', function(req,res) {
     var slug = req.params.slug;
+    db.get("SELECT * FROM pet WHERE slug = '"+slug+"';",function(err, row) {
+        res.render("pet.html",{pet: row});
+    });
 });
 
 
