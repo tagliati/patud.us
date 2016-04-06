@@ -7,7 +7,7 @@ var db = new sqlite3.Database(config.db);
 
 var slug =  randomstring.generate(config.slugSize);
 var qrimage = qr.image(config.domain+"/"+slug, { type: 'svg',size: 7 });
-qrimage.pipe(require('fs').createWriteStream(slug+'.svg'));
+qrimage.pipe(require('fs').createWriteStream('public/images/qr/'+slug+'.svg'));
  
 var svg_string = qr.imageSync('I love QR!', { type: 'svg' });
 var stmt = db.prepare("INSERT INTO pet VALUES (?,?,?,?)");
